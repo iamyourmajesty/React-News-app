@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 
 // const URL =  'https://official-joke-api.appspot.com/jokes/ten';
-const URL2 ='https://nice-cyan-fly-gear.cyclic.app/articles/get';
+// const URL2 ='https://nice-cyan-fly-gear.cyclic.app/articles/get';
 
-
+const URL3 = 'https://theindianthinktankbackend.onrender.com/articles/get';
 
 
 
@@ -25,7 +25,7 @@ const Articles = () => {
   useEffect(() => {
 
     // Make a request for a user with a given ID
-axios.get(URL2)
+axios.get(URL3)
 .then(function (response) {
   // handle success
   // console.log(response);
@@ -58,7 +58,7 @@ axios.get(URL2)
         
         <div className="news-card" >
         <div className="news-card-image">
-          <img src={article.imgs} alt={article.title} />
+          <img src={article.file} alt={article.title} />
         </div>
         <div className="news-card-content">
           <h3 className="news-card-title">{article.title}</h3>
