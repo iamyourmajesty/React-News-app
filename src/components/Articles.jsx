@@ -15,34 +15,36 @@ const URL3 = 'https://theindianthinktankbackend.onrender.com/articles/get';
 
 
 
-const Articles = () => {
+const Articles =  () => {
 
 
   const [articles,setArticles] = useState("");
 
-  
+  async function myfunction () {
 
-  useEffect(() => {
 
     // Make a request for a user with a given ID
-axios.get(URL3,{timeout : 900})
-.then(function (response) {
-  // handle success
-  // console.log(response);
-  setArticles(response);
+    const ressponse = await axios.get(URL3,{timeout : 1500})
+    .then(function (response) {
+      // handle success
+      // console.log(response);
+      setArticles(response);
+      
+      // console.log(DATA);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    
+
+  }
   
-  // console.log(DATA);
-})
-.catch(function (error) {
-  // handle error
-  console.log(error);
-})
-.finally(function () {
-  // always executed
-},[]);
+  
 
+  useEffect(  ()  => {
 
-
+    myfunction();
     
   });
 
