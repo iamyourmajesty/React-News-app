@@ -34,7 +34,7 @@ const Article = () => {
 
   return (
     <>
-    <div className="blog">
+    <div className="blog"    >
     <h1 className="blog__title">{article.title}</h1>
     <p className="blog__description">{article.dis}</p>
     <img className="blog__image" src={article.file} alt={article.title} />

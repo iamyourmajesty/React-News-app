@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.05fc4069.css",
-    "main.js": "/static/js/main.e39e744e.js",
+    "main.css": "/static/css/main.007a1969.css",
+    "main.js": "/static/js/main.1bc22c7e.js",
     "static/media/pro7.png": "/static/media/pro7.ea6401a0ce0fd461f64f.png",
     "static/media/bag_for_phone.png": "/static/media/bag_for_phone.458ce5f18330d8aebf68.png",
     "static/media/c1.png": "/static/media/c1.d343af7bb5e52731c66a.png",
@@ -10,11 +10,11 @@
     "static/media/chinalogo.png": "/static/media/chinalogo.37748355c6aa4e1af855.png",
     "static/media/usa_logo.png": "/static/media/usa_logo.db48eb50228f29626884.png",
     "index.html": "/index.html",
-    "main.05fc4069.css.map": "/static/css/main.05fc4069.css.map",
-    "main.e39e744e.js.map": "/static/js/main.e39e744e.js.map"
+    "main.007a1969.css.map": "/static/css/main.007a1969.css.map",
+    "main.1bc22c7e.js.map": "/static/js/main.1bc22c7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.05fc4069.css",
-    "static/js/main.e39e744e.js"
+    "static/css/main.007a1969.css",
+    "static/js/main.1bc22c7e.js"
   ]
 }
