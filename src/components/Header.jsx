@@ -1,36 +1,39 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import {HashLink} from "react-router-hash-link"
 
+
+
 const Header = () => {
+
+  
   return (
    <>
 
 
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
+<nav className="navbar  navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <HashLink className="navbar-brand" to="/#home">The Indian Think Tank</HashLink>
+    <HashLink  className="navbar-brand navbar-nav a" to="/#home">The Indian Think Tank</HashLink>
     <div className="collapse navbar-collapse main" id="navbarTogglerDemo03">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
+        <li className="nav-item"  >
           
-          <HashLink className="nav-link active" to="/#home">Home</HashLink>
+          <HashLink  className="nav-link active " to="/#home">Home</HashLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" >
          
-          <Link className="nav-link" to="/articles">Articles</Link>
+          <Link  className="nav-link " to="/articles">Articles</Link>
         </li>
-        <li className="nav-item">
-        <HashLink className="nav-link" to="/#about">About</HashLink>
+        <li className="nav-item" >
+        <HashLink  className="nav-link " to="/#about">About</HashLink>
         </li>
-        <li className="nav-item">
-        <HashLink className="nav-link" to="/#brands">Super Powers</HashLink>
+        <li className="nav-item" >
+        <HashLink className="nav-link " to="/#brands">Super Powers</HashLink>
         </li>
-        <li className="nav-item">
-        <Link className="nav-link" to="/contact">Contact</Link>
+        <li className="nav-item" >
+        <Link  className="nav-link " to="/contact">Contact</Link>
         </li>
       </ul>
       <form className="d-flex">
