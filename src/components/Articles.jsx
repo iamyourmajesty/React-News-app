@@ -25,7 +25,7 @@ const Articles = () => {
   useEffect(() => {
 
     // Make a request for a user with a given ID
-axios.get(URL3)
+axios.get(URL3,{timeout : 900})
 .then(function (response) {
   // handle success
   // console.log(response);

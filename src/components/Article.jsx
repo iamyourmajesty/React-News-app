@@ -20,7 +20,7 @@ const Article = () => {
   useEffect(() => {
 
     const fetchData = () => {
-      return fetch(URL)
+      return fetch(URL , {timeout : 600})
             .then((response) => response.json())
             .then((data) => 
             setArticle(data)
@@ -45,7 +45,7 @@ const Article = () => {
     <br />
     <p className='blog__article'> {article.p3}</p>
     <br /> <br />
-    
+
     <p className='blog__article'> {article.p4}</p>
     </div>
     
