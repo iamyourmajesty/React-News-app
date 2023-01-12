@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import { HashRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Home from "./components/Home";
 import Footer from './components/Footer';
@@ -23,7 +24,7 @@ const App = () => {
 
 
   return (    
-     <Router>
+     <HashRouter   >
       <Header/>
       <Routes>
         <Route path='/' element={ <Home/>  }/>
@@ -32,7 +33,7 @@ const App = () => {
         <Route path='/article:id' element={ <Article/>  }/>
       </Routes>
       <Footer/>
-     </Router>  
+     </HashRouter>  
    
   )
 }
