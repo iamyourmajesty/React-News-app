@@ -47,6 +47,17 @@ const Article = () => {
     <br /> <br />
 
     <p className='blog__article'> {article.p4}</p>
+
+    <pre className='blog__article'> {article.c1 }</pre> <br />
+    <pre className='blog__article'> {article.c2 }</pre> <br />
+    <pre className='blog__article'> {article.c3 }</pre> <br />
+    <pre className='blog__article'> {article.c4 }</pre> <br />
+    <pre className='blog__article'> {article.c5 }</pre> <br />
+    <pre className='blog__article'> {article.c6 }</pre> <br />
+    <pre className='blog__article'> {article.c7 }</pre> <br />
+    <pre className='blog__article'> {article.c8 }</pre> <br />
+    <pre className='blog__article'> {article.c9 }</pre> <br />
+    <pre className='blog__article'> {article.c10 }</pre> <br />
     </div>
     
     </>
