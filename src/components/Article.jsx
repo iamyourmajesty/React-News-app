@@ -38,7 +38,7 @@ const Article = () => {
     <h1 className="blog__title">{article.title}</h1>
     <p className="blog__description">{article.dis}</p>
     <img className="blog__image" src={article.file} alt={article.title} />
-    <p className="blog__article"> <span className='location' >New Delhi : </span> {article.p1} 
+    <p className="blog__article"> <span className='location' > {article.date}  New Delhi : </span> {article.p1} 
     </p>
     <br />
     <p className='blog__article'> {article.p2}</p>
