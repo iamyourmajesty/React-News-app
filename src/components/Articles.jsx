@@ -24,7 +24,7 @@ const Articles =  () => {
 
 
     // Make a request for a user with a given ID
-    const ressponse = await axios.get(URL3)
+    const ressponse = await axios.get(URL3 , {timeout : 1500})
     .then(function (response) {
       // handle success
       // console.log(response);
