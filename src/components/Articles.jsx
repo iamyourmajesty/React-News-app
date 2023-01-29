@@ -19,6 +19,8 @@ const Articles =  () => {
 
 
   const [articles,setArticles] = useState("");
+ 
+
 
   async function myfunction () {
 
@@ -45,7 +47,7 @@ const Articles =  () => {
   useEffect(  ()  => {
 
     myfunction();
-    
+     
   });
 
 
@@ -54,7 +56,41 @@ const Articles =  () => {
   return (
     <>
 
-    {
+{
+  articles && (
+    <>
+      {
+        Array.from({ length: articles.data.length }, (_, i) => articles.data[articles.data.length - 1 - i]).map((article) => (
+          // Your code here
+           
+        <div className="news-card" >
+        <div className="news-card-image">
+          <img src={article.file} alt={article.title} />
+        </div>
+        <div className="news-card-content">
+          <h3 className="news-card-title">{article.title}</h3>
+          <div className="news-card-meta">
+            
+            <p>{article.date}</p>
+          </div>
+          <p className="news-card-description">{article.dis}   <Link className='readmore' to={{
+    pathname: `/article${article._id}`,
+    
+    }} >Read more...  </Link>   </p>
+        </div>
+      </div>
+      
+        ))
+      }
+    </>
+  )
+}
+
+
+
+
+{/* 
+{
       articles && articles.data.map((article) =>(
 
         
@@ -78,6 +114,20 @@ const Articles =  () => {
       
         ))
     } 
+
+
+
+
+ */}
+
+
+
+
+
+
+
+
+
 
 
 
