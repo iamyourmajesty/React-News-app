@@ -20,7 +20,7 @@ const Article = () => {
   useEffect(() => {
 
     const fetchData = () => {
-      return fetch(URL , {timeout : 600})
+      return fetch(URL , {timeout : 700})
             .then((response) => response.json())
             .then((data) => 
             setArticle(data)

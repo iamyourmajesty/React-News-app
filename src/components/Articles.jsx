@@ -65,7 +65,7 @@ const Articles =  () => {
         <div className="news-card-content">
           <h3 className="news-card-title">{article.title}</h3>
           <div className="news-card-meta">
-            <p>{"author name"}</p>
+            
             <p>{article.date}</p>
           </div>
           <p className="news-card-description">{article.dis}   <Link className='readmore' to={{
