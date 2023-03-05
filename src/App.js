@@ -16,8 +16,7 @@ import './styles/Footer.scss'
 import './styles/Contact.scss'
 import './styles/Articles.scss'
 import './styles/Article.scss'
-
-
+import './styles/loading.scss'
 
 
 const App = () => {

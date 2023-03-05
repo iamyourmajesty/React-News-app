@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import Loader from './loading'
 
 
 
@@ -14,19 +14,17 @@ const URL3 = 'https://theindianthinktankbackend.onrender.com/articles/get';
 
 
 
-
 const Articles =  () => {
 
 
   const [articles,setArticles] = useState("");
- 
 
 
   async function myfunction () {
-
-
+  
+  
     // Make a request for a user with a given ID
-    const ressponse = await axios.get(URL3 , {timeout : 1500})
+    const response = await axios.get(URL3)
     .then(function (response) {
       // handle success
       // console.log(response);
@@ -39,22 +37,24 @@ const Articles =  () => {
       console.log(error);
     })
     
-
+  
+  
   }
   
   
-
+  
   useEffect(  ()  => {
-
+  
     myfunction();
      
   });
-
-
-
-
+  
+  if(articles.length === 0)
+  return ( <Loader/>);
+  else
   return (
     <>
+    
 
 {
   articles && (
@@ -135,6 +135,6 @@ const Articles =  () => {
     
     </>
   )
-}
+};
 
 export default Articles;

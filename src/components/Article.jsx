@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect , useState } from 'react';
 import {useParams} from 'react-router-dom';
-
+import Loader from './loading'
 
 const URL2 ='https://theindianthinktankbackend.onrender.com/article';
 
@@ -32,6 +32,9 @@ const Article = () => {
     fetchData();
   },[])
 
+  if(article.length === 0)
+  return (<Loader/> );
+  else
   return (
     <>
     <div className="blog"    >
