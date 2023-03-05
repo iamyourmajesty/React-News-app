@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useEffect , useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from './loading'
-
+import ScrollToTop from './ScroolToTop';
 
 
 
@@ -50,10 +50,16 @@ const Articles =  () => {
   });
   
   if(articles.length === 0)
-  return ( <Loader/>);
+  return ( 
+    <>
+    <ScrollToTop/>
+    <Loader/>
+    </>
+  );
   else
   return (
     <>
+    <ScrollToTop/>
     
 
 {

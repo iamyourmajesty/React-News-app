@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect , useState } from 'react';
 import {useParams} from 'react-router-dom';
 import Loader from './loading'
-
+import ScrollToTop from './ScroolToTop';
 const URL2 ='https://theindianthinktankbackend.onrender.com/article';
 
 
@@ -33,10 +33,16 @@ const Article = () => {
   },[])
 
   if(article.length === 0)
-  return (<Loader/> );
+  return (
+    <>
+    <ScrollToTop/>
+    <Loader/>
+    </>
+   );
   else
   return (
     <>
+    <ScrollToTop/>
     <div className="blog"    >
     <h1 className="blog__title">{article.title}</h1>
     <p className="blog__description">{article.dis}</p>
