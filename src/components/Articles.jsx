@@ -71,7 +71,7 @@ const Articles =  () => {
            
         <div className="news-card" >
         <div className="news-card-image">
-          <img src={article.file} alt={article.title} />
+        <img src={article.sfile} alt={article.title} />
         </div>
         <div className="news-card-content">
           <h3 className="news-card-title">{article.title}</h3>
