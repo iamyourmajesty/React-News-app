@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fc2e41ca.css",
-    "main.js": "/static/js/main.713bcbf8.js",
+    "main.js": "/static/js/main.7430c948.js",
     "static/media/pro7.png": "/static/media/pro7.ea6401a0ce0fd461f64f.png",
     "static/media/c1.png": "/static/media/c1.d343af7bb5e52731c66a.png",
     "static/media/russia_logo.png": "/static/media/russia_logo.1f6c1c2ce9994d6d050a.png",
@@ -10,10 +10,10 @@
     "static/media/usa_logo.png": "/static/media/usa_logo.db48eb50228f29626884.png",
     "index.html": "/index.html",
     "main.fc2e41ca.css.map": "/static/css/main.fc2e41ca.css.map",
-    "main.713bcbf8.js.map": "/static/js/main.713bcbf8.js.map"
+    "main.7430c948.js.map": "/static/js/main.7430c948.js.map"
   },
   "entrypoints": [
     "static/css/main.fc2e41ca.css",
-    "static/js/main.713bcbf8.js"
+    "static/js/main.7430c948.js"
   ]
 }
